@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeDate</title>
+
+    <style>
+        div{
+            width: 90vw;
+            height: 80vh;
+            margin: 10vh auto ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        button{
+            width: 10%;
+            padding: 5px;
+            border: 2px solid #746969;
+            border-radius: 3px;
+            margin-bottom:5px ;
+            
+        }
+
+        input{
+            width:31%; 
+            border-radius: 5px; 
+            padding:8px; 
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button class="get-date">Get Date</button> 
+    <label for="">Todays Date and Time</label>
+    <input class="output" type="text ">
+    </div>
+
+    <script>
+        //selecting button and Adding event listener
+       document.querySelector(".get-date").addEventListener("click", ()=>{
+           //defining variables
+        const outPut = document.querySelector(".output")
+        const today = new Date();
+        
+        outPut.value =`${today}`;
+
+       })
+
+   
+
+       
+        
+    </script>
+</body>
+</html>
